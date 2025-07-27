@@ -4,6 +4,7 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta name = "description" content = "software house">
+    <link rel="shortcut icon" href="img/gtech.png" type="image/x-icon">
     <link rel = "stylesheet" href="css/style.css">
     <title>GTech - Loja de software</title>
 </head>
@@ -12,16 +13,31 @@
         <div class = "container">
             <h1><a href = "#">GTech</a></h1>
 
-            <nav>
+            <nav class = "desktop">
                 <ul>
-                    <li><a href = "#">Início</a></li>
-                    <li><a href = "#about-us">Sobre Nós</a></li>
-                    <li><a href = "#whats-do-we-do">O Que Fazemos</a></li>
-                    <li><a href = "#talk-with-us">Fale Com Nosco</a></li>
+                    <li><a class = "hover-link" href = "#">Início</a></li>
+                    <li><a class = "hover-link" href = "#about-us">Sobre Nós</a></li>
+                    <li><a class = "hover-link" href = "#whats-do-we-do">O Que Fazemos</a></li>
+                    <li><a class = "hover-link" href = "#talk-with-us">Fale Com Nosco</a></li>
                 </ul>
             </nav>
+
+            <img onclick = "document.querySelector('.menu-mobile').classList.remove('w-0')" class = "icon mobile" src = "img/umburger.png" alt = "umburger icon">
         </div>
     </header>
+
+    <nav class = "menu-mobile mobile w-0">
+        <div class = "wrapper-icon">
+            <img onclick = "document.querySelector('.menu-mobile').classList.add('w-0')" class = "icon" src = "img/x.webp" alt = "close icon">
+        </div>
+        
+        <ul>
+            <li><a class = "hover-link" href = "#">Início</a></li>
+            <li><a class = "hover-link" href = "#about-us">Sobre Nós</a></li>
+            <li><a class = "hover-link" href = "#whats-do-we-do">O Que Fazemos</a></li>
+            <li><a class = "hover-link" href = "#talk-with-us">Fale Com Nosco</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class = "banner">
@@ -40,7 +56,7 @@
         </section>
 
         <section id = "about-us">
-            <h2 class = "title c-primary center pd">SOMOS GTECH</h2>
+            <h2 class = "title-2 c-primary center pd">SOMOS GTECH</h2>
             
             <div class = "container">
                 <div class = "flex flex-top">
@@ -76,7 +92,7 @@
         </section>
 
         <section id = "whats-do-we-do">
-            <h2 class = "title c-primary center pd">O QUE FAZEMOS</h2>
+            <h2 class = "title-2 c-primary center pd">O QUE FAZEMOS</h2>
 
             <div class = "products">
                 <main>
@@ -84,12 +100,13 @@
                         <h3>Sistemas Personalizados</h3>
 
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Architecto ad dolorem
-                            autem dolorum repellat? Eligendi eius
-                            impedit voluptate quaerat deserunt tempore!
-                            Tempore dignissimos odit aliquid, nam voluptates
-                            ducimus harum doloribus?
+                            Desenvolvemos sistemas de gestão sob medida para atender
+                            às necessidades específicas do seu negócio.
+                            Nossos sistemas são projetados para automatizar processos,
+                            melhorar a organização interna, reduzir erros e aumentar a
+                            produtividade. Seja para controle financeiro, gestão de estoque,
+                            fluxo de atendimento, emissão de relatórios ou qualquer outro processo,
+                            entregamos soluções completas, seguras e fáceis de usar.
                         </p>
                     </div>
 
@@ -97,10 +114,13 @@
                         <h3>Softwares para automação de tarefas</h3>
 
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Fugiat est inventore vero exercitationem, incidunt at
-                            itaque aut, pariatur, doloribus dolores hic dignissimos
-                            sit assumenda provident? Autem voluptate cum ratione doloremque.
+                            Elimine processos manuais e ganhe tempo com nossos
+                            softwares de automação. Criamos soluções inteligentes
+                            que executam tarefas repetitivas de forma automática,
+                            como envio de e-mails, notificações, backup de dados,
+                            geração de relatórios e muito mais. Reduza erros humanos,
+                            aumente a eficiência da sua equipe e foque no que
+                            realmente importa: o crescimento do seu negócio.
                         </p>
                     </div>
 
@@ -108,10 +128,12 @@
                         <h3>Tratamento de dados</h3>
 
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Ipsam laborum rerum hic quidem velit nam voluptatum voluptas
-                            similique, quasi eligendi, cum sequi non ullam suscipit eaque
-                            accusamus numquam aliquam soluta!
+                            Transformamos, organizamos e migramos seus dados com segurança
+                            e precisão. Seja para integrar novos sistemas, atualizar
+                            estruturas antigas ou unificar informações dispersas,
+                            oferecemos soluções completas para garantir que seus dados
+                            estejam limpos, consistentes e prontos para uso. Cuidamos de
+                            todo o processo com confidencialidade e sem perda de informações.
                         </p>
                     </div>
                 </main>
@@ -126,9 +148,13 @@
         </section>
 
         <section id = "talk-with-us">
+            <a class = "float" href="http://wa.me/244930826392" target="_blank">
+                <img src = "img/whatsapp-color.webp" alt = "whatsapp icon">
+            </a>
+
             <h2 class = "title-2 c-primary center pd">FALE COM NOSCO</h2>
 
-            <form action="" method="post">
+            <form action = "https://formspree.io/f/xkgzbnor" method="post">
                 <section>
                     <label for = "name">Nome</label>
                     <input type = "text" id = "name" name = "name" placeholder = "Digite aqui">
@@ -165,9 +191,31 @@
                     <li><a href = "#whats-do-we-do">O Que Fazemos</a></li>
                 </ul>
             </nav>
+
+            <div>
+                <a href = "http://" target = "_blank">
+                    <img src = "img/facebook.svg" alt = "facebook icon">
+                </a>
+
+                <a href = "http://" target = "_blank">
+                    <img src = "img/instagram.svg" alt = "instagram icon">
+                </a>
+
+                <a href = "https://wa.me/244930826392" target = "_blank">
+                    <img src = "img/whatsapp.svg" alt = "whatsapp icon">
+                </a>
+
+                <a href = "http://" target = "_blank">
+                    <img src = "img/github.svg" alt = "github icon">
+                </a>
+            </div>
         </div>
 
-        <div></div>
+        <div>
+            <p>
+                &copy; copywrite 2025 | Todos direitos resevados | gtech.gvn@gmail.com
+            </p>
+        </div>
     </footer>
 
     <script src = "js/app.js"></script>

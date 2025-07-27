@@ -29,6 +29,26 @@ p {
     line-height: 1.4em;
 }
 
+.float {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+}
+
+.float > img {
+    width: 80px;
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+}
+
 body > header {
     position: fixed;
     top: 0;
@@ -37,6 +57,7 @@ body > header {
     background: #fff;
     color: #eee;
     transition: .3s;
+    z-index: 5;
     box-shadow: 0px 1px 5px 1px #333;
 }
 
@@ -76,6 +97,43 @@ body > header a {
 body > header li a {
     padding: 8px;
     font-weight: bold;
+}
+
+.menu-mobile {
+    position: fixed;
+    height: 100dvh;
+    text-align: right;
+    right: 0;
+    z-index: 6;
+    background: #fff;
+    box-shadow: 1px 0 5px 1px #333;
+    width: 70%;
+    max-width: 300px;
+    transition: .3s;
+}
+
+.menu-mobile li {
+    display: grid;
+    list-style: none;
+}
+
+.menu-mobile li a {
+    text-decoration: none;
+    padding: 7px;
+    color: #333;
+}
+
+.menu-mobile .wrapper-icon {
+    text-align: left;
+    position: absolute;
+}
+
+.hover-link:hover {
+    background: var(--color-main);
+}
+
+.w-0 {
+    width: 0;
 }
 
 main > section:not(:first-child) {
@@ -204,6 +262,10 @@ main > section#about-us p:not(:last-child) {
     opacity: .7;
 }
 
+#talk-with-us, #whats-do-we-do {
+    padding: 0 10px;
+}
+
 #talk-with-us > form {
     max-width: 600px;
     margin: 0 auto;
@@ -232,6 +294,57 @@ main > section#about-us p:not(:last-child) {
     cursor: pointer;
 }
 
+body > footer {
+    margin-top: 40px;
+    box-shadow: 0px 1px 5px 1px #333;
+    padding: 0 5px;
+}
+
+body > footer > div a {
+    color: #333;
+    text-decoration: none;
+}
+
+body > footer > div:first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+body > footer > div:first-child > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+body > footer > div:first-child > div img {
+    width: 40px;
+}
+
+body > footer > div:first-child > nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+body > footer > div:first-child > nav li a {
+    padding: 7px;
+    font-weight: bold;
+}
+
+body > footer > div:first-child > nav li a:hover {
+    text-decoration: underline;
+}
+
+body > footer > div:last-child p {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    padding: 5px;
+}
+
 @media screen and (max-width: 850px) {
     main > section.banner {
         justify-content: left;
@@ -257,6 +370,37 @@ main > section#about-us p:not(:last-child) {
     }
 
     main > section#about-us img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .title-2 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    body > footer > div:first-child > nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
         display: none;
     }
 }
