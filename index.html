@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "pt">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "software house">
+    <link rel = "stylesheet" href="css/style.css">
+    <title>GTech - Loja de software</title>
+</head>
+<body>
+    <header class = "big-header">
+        <div class = "container">
+            <h1><a href = "#">GTech</a></h1>
+
+            <nav>
+                <ul>
+                    <li><a href = "#">Início</a></li>
+                    <li><a href = "#about-us">Sobre Nós</a></li>
+                    <li><a href = "#whats-do-we-do">O Que Fazemos</a></li>
+                    <li><a href = "#talk-with-us">Fale Com Nosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class = "banner">
+            <div>
+                <p class = "title">SOMOS GTECH</p>
+                <p class = "title-2 c-danger">UMA LOJA DE<br>SOFTWARE</p>
+                <p>
+                    Nossa equipe de especialistas fornece serviços de alto nível
+                    que aumentam a qualidade e a produtividade do seu software
+                </p>
+            </div>
+
+            <div>
+                <img src = "img/in_banner.svg" alt = "uma mulher escrevendo em um escritório">
+            </div>
+        </section>
+
+        <section id = "about-us">
+            <h2 class = "title c-primary center pd">SOMOS GTECH</h2>
+            
+            <div class = "container">
+                <div class = "flex flex-top">
+                    <img src="img/about1.png" alt="">
+                    <div>
+                        <p>
+                            GTech é uma loja de software angolana que foca em ofercer softwares de qualidade
+                            para os seus clientes. Ela é nova no mercado tendo surgindo em outubro de 2024,
+                            trabalhando desde então com profissionais na área
+                        </p>
+                        <p>
+                            Somos especialistas no desenvolvimento de software, desde sistemas web's a desktop's
+                            utilizando tecnologias de ponta.
+                            Temos experiência no fornecimento de diversos tipos de produtos tecnologicos, como
+                            sistemas de gestão personalizados, tratamento de dados e automação de processos.
+                        </p>
+                    </div>
+                </div>
+                <div class = "flex flex-bottom">
+                    <div>
+                        <p>
+                            Trabalhamos com empresas de pequeno e médio porte, oferecendo uma variedade de serviços
+                            que vão desde o ciclo de vida de desenvolvimento de projectos até regates de sistemas legados.
+                        </p>
+                        <p>
+                            Podemos ajudá-lo a ter não apenas um óptimo aplicativo web ou desktop em produção, mas também
+                            a melhorar seus processos de desenvolvimento de software e garantia de qualidade.
+                        </p>
+                    </div>
+                    <img src="img/about2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id = "whats-do-we-do">
+            <h2 class = "title c-primary center pd">O QUE FAZEMOS</h2>
+
+            <div class = "products">
+                <main>
+                    <div class = "custom-system show">
+                        <h3>Sistemas Personalizados</h3>
+
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Architecto ad dolorem
+                            autem dolorum repellat? Eligendi eius
+                            impedit voluptate quaerat deserunt tempore!
+                            Tempore dignissimos odit aliquid, nam voluptates
+                            ducimus harum doloribus?
+                        </p>
+                    </div>
+
+                    <div class = "auto-software">
+                        <h3>Softwares para automação de tarefas</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Fugiat est inventore vero exercitationem, incidunt at
+                            itaque aut, pariatur, doloribus dolores hic dignissimos
+                            sit assumenda provident? Autem voluptate cum ratione doloremque.
+                        </p>
+                    </div>
+
+                    <div class = "data">
+                        <h3>Tratamento de dados</h3>
+
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Ipsam laborum rerum hic quidem velit nam voluptatum voluptas
+                            similique, quasi eligendi, cum sequi non ullam suscipit eaque
+                            accusamus numquam aliquam soluta!
+                        </p>
+                    </div>
+                </main>
+                <footer>
+                    <nav>
+                        <p onclick = "replace_product('custom-system')">Sistemas personalizados</p>
+                        <p onclick = "replace_product('auto-software')">Softwares para automação de tarefas</p>
+                        <p onclick = "replace_product('data')">Tratamento de dados</p>
+                    </nav>
+                </footer>
+            </div>
+        </section>
+
+        <section id = "talk-with-us">
+            <h2 class = "title-2 c-primary center pd">FALE COM NOSCO</h2>
+
+            <form action="" method="post">
+                <section>
+                    <label for = "name">Nome</label>
+                    <input type = "text" id = "name" name = "name" placeholder = "Digite aqui">
+                </section>
+
+                <section>
+                    <label for = "phone">Telefone</label>
+                    <input type = "text" name = "phone" id = "phone" placeholder = "Digite aqui">
+                </section>
+
+                <section>
+                    <label for = "email">Email</label>
+                    <input type = "email" name = "email" id="email" placeholder = "Digite aqui">
+                </section>
+
+                <section>
+                    <label for = "content">Mensagem</label>
+                    <textarea name = "content" id = "content" rows = "10" placeholder = "Digite aqui"></textarea>
+                </section>
+
+                <section>
+                    <button>ENVIAR</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href = "#">Início</a></li>
+                    <li><a href = "#about-us">Sobre Nós</a></li>
+                    <li><a href = "#whats-do-we-do">O Que Fazemos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div></div>
+    </footer>
+
+    <script src = "js/app.js"></script>
+</body>
+</html>

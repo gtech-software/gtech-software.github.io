@@ -1,0 +1,262 @@
+@import 'base.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+body > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #eee;
+    transition: .3s;
+    box-shadow: 0px 1px 5px 1px #333;
+}
+
+body > header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: .4s;
+}
+
+header.big-header {
+    background: transparent;
+    color: #eee;
+}
+
+header.big-header a {
+    color: #eee;
+}
+
+header.big-header > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+body > header li {
+    list-style: none;
+    display: inline-block;
+}
+
+body > header a {
+    text-decoration: none;
+    color: #333;
+}
+
+body > header li a {
+    padding: 8px;
+    font-weight: bold;
+}
+
+main > section:not(:first-child) {
+    padding-bottom: 50px;
+}
+
+main > section:nth-child(odd) {
+    background: #f7f8fc;
+}
+
+main > section.banner {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 45px;
+    background: linear-gradient(165deg, var(--color-main), #fff);
+}
+
+main > section.banner p {
+    max-width: 550px;
+}
+
+main > section.banner img {
+    width: 100%;
+}
+
+main > section#about-us .flex-top {
+    justify-content: right;
+    align-items: start;
+}
+
+main > section#about-us .flex-bottom {
+    justify-content: left;
+    align-items: end;
+}
+
+main > section#about-us p {
+    max-width: 600px;
+}
+
+main > section#about-us p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title-2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.c-primary {
+    color: var(--color-main);
+}
+
+.c-danger {
+    color: var(--color-contrast);
+}
+
+.flex {
+    display: flex;
+}
+
+.pd {
+    padding: 60px 20px;
+}
+
+.products {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 1px 1px 5px 1px #333;
+}
+
+.products > main {
+    padding: 30px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.products > main > div {
+    display: none;
+}
+
+.products > main > div.show {
+    display: block;
+}
+
+.products h3 {
+    margin-bottom: 15px;
+}
+
+.products footer > nav {
+    display: flex;
+}
+
+.products footer > nav p {
+    flex: 1;
+    background: var(--color-main);
+    color: #eee;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.products footer > nav p:hover {
+    opacity: .7;
+}
+
+#talk-with-us > form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#talk-with-us > form > section:not(:last-child) {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+#talk-with-us > form > section input, #talk-with-us > form > section textarea {
+    border: none;
+    outline: none;
+    padding: 7px;
+    resize: none;
+    border-bottom: 1px solid var(--color-main);
+}
+
+#talk-with-us > form button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-main);
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    main > section.banner {
+        justify-content: left;
+    }
+
+    main > section.banner > div:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    main > section#about-us {
+        text-align: justify;
+    }
+
+    main > section#about-us .flex-top {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    main > section#about-us .flex-bottom {
+        justify-content: center;
+    }
+
+    main > section#about-us img {
+        display: none;
+    }
+}
