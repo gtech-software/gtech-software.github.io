@@ -225,7 +225,7 @@ main > section#about-us p:not(:last-child) {
 
 .products > main {
     padding: 30px;
-    height: 300px;
+    height: 500px;
     overflow-y: auto;
 }
 
